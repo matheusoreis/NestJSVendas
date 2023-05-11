@@ -15,6 +15,6 @@ export class UserController {
 
   @Post()
   async createUser(@Body() createUser: CreateUserDTO): Promise<UserEntity> {
-    return this.userService.CreateUser(createUser);
+    return this.userService.createUser(createUser);
   }
 }
